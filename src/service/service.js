@@ -6,11 +6,11 @@ export const exlRequest = (orders) => {
     const cancelDate = true;
     const netPrice = true;
     const estimateDeliveryDate = true;
-    const authorization = 'Bearer 00D5r0000005EPh!ARsAQLIemzsh0vMBDX6XU5faz42zzQEF2iSbmnm6YrQqvhu40txEQsUBk1hzYl_mJIN9PTgy.SUTi.e1aWXTxVIM3G01j77B';
+    const authorization = 'Token xxx123';
 
     axios({
         method: 'post',
-        url: 'https://clapp-v2.stg.whs.adidas.com/service/orderbook2/6250049000/6255/download/xls',
+        url: 'https://www.webpage.com/{clientNumber}/1234/download/xls',
         data: {
             locale,
             brand,
@@ -19,7 +19,7 @@ export const exlRequest = (orders) => {
             estimateDeliveryDate,
             ordersData: [
                 {
-                    orderId: "6223229164",
+                    orderId: "00001",
                     sourceIdentifier: "NWGW",
                     serviceIdentifier: "orders",
                     clickDocumentType: "reorder",
@@ -30,7 +30,7 @@ export const exlRequest = (orders) => {
         headers: {
             authorization,
             'Content-Type': "application/json",
-            'Request-ID': "637ba5d7-78d1-48b1-9b74-c90f051b7877",
+            'Request-ID': "magicID",
         },
     })
     .then(function (response) {
