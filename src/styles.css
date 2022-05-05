@@ -1,0 +1,22 @@
+* {
+	box-sizing: border-box;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body {
+	background-color: #eee;
+	display: grid;
+	place-content: center;
+	min-height: 100vh;
+	margin: 0;
+}
+
+ul {
+	list-style: none;
+}
+
+.container {
+	border: 1px solid black;
+	padding: 1rem;
+	border-radius: 4px;
+}
